@@ -96,7 +96,7 @@ jobs:
         with:
           maturin-version: latest
           command: build
-          args: --release
+          args: --release --interpreter python${{matrix.python_version}}
 
       - name: List wheels
         if: matrix.os == 'windows-latest'
