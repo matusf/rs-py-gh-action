@@ -126,4 +126,4 @@ jobs:
 
       - name: PyPi publish
         if: github.event_name == 'release' && github.event.action == 'created'
-        run: maturin publish -r https://test.pypi.org/legacy/ -u __token__ -p ${{ secrets.PYPI_TOKEN }}
+        run: maturin publish -r https://test.pypi.org -u __token__ -p ${{ secrets.PYPI_TOKEN }}
