@@ -1,5 +1,5 @@
 [package]
-name = "string-sum"
+name = "string-sum-test"
 version = "0.1.0"
 edition = "2018"
 
